@@ -1,0 +1,24 @@
+<div class="container">
+  <!-- <img src="assets/img/ampath.png" alt="logo">
+  <hr> -->
+  <div class="error" style="color: red; font-weight: bold;" *ngIf="error">Error:{{ this.error }}</div>
+  <form  (submit)="onSubmit($event, username.value, password.value)" ngNativeValidate >
+      <div class="form-group row">
+          <div class="col-12">
+              <input class="form-control input-lg" type="text" 
+              id="username" placeholder="username" #username required>
+          </div>
+      </div>
+      <div class="form-group row">
+          <div class="col-12">
+              <input class="form-control input-lg" type="password" 
+              id="password" placeholder="password" #password required>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1 col-sm-offset-9">
+              <button type="submit" class="btn btn-primary btn-lg">Login</button>
+          </div>
+      </div>
+  </form> 
+</div>

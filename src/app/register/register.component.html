@@ -1,0 +1,26 @@
+<div class="container">
+<h3>User Registration Module</h3>
+<hr>
+  <form (submit)="OnRegister($event, username.value, password.value, email.value)">
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" #username >
+    </div>
+    <div>
+        <label for="password">Password  :</label>
+        <input type="text" class="form-control" id="password" #password >
+    </div>
+    <div>
+        <label for="passwordc">Confirm Password  :</label>
+        <input type="text" class="form-control" id="passwordc" >
+    </div> 
+    <div>
+        <label for="email">Email :</label>
+        <input type="text" class="form-control" id="email" #email >
+    </div>      
+    <div class="row">
+      <div class="col-sm-1 col-sm-offset-9">
+          <button type="submit" class="btn btn-success btn-lg">Register</button>
+      </div>      
+    </div>
+  </form>

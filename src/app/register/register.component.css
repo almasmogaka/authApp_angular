@@ -1,0 +1,14 @@
+.container {
+    border: 1px solid grey;
+    margin: 60px auto;
+    padding: 60px;
+    width: 700px;
+    height: 660px;
+}
+div input{
+    margin: 20px;
+}
+div label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
